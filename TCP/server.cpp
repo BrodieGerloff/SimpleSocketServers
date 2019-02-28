@@ -16,19 +16,6 @@
 
 using namespace std;
 
-/*
-Things to note: need to use POSIX threads, create a helper function (that handles incoming messages).
-Need an array of client file descriptors. e.g. int client[100]
-Also an integer to keep track of number of connections. Lets call it "n"
-
-A seperate helper function for sending an incoming message to all clients is also helpful. Can just loop through client[]
-
-To use the posix threads, you need a function that houses your client communication code. This will be run in each thread. Basically,
-Just loop your recv function as normal. You also need to remove a client from the array if it disconnects in this loop.
-
-In your main function loop
-*/
-
 int main() {
 	
 	//Setup
